@@ -4,7 +4,7 @@ import nlpnet
 tagger = nlpnet.POSTagger('pos-pt/', language='pt')
 
 while True:
-    print("Enter some text:")
+    print("Enter phrase:")
     text = input()
     resp = tagger.tag(text)
     print(resp)
